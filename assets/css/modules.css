@@ -1,0 +1,23 @@
+.container {
+    margin-right: 1em;
+    margin-left: 1em;
+    max-width: 1440px;
+}
+
+.button {
+    width: 48.5%;
+    padding: 1rem 1.5rem;
+    border: 1px solid #000;
+    border-radius: 1.5rem;
+    /* box-shadow: 4 4 4 #000; */
+}
+
+.button--primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.button--secondary {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}

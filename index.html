@@ -10,39 +10,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/normalize.css">
     <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/modules.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/aside.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
 </head>
 <body>
     
     <header class="header">
         <section class="container">
             <img src="/assets/images/logo.svg" alt="Logo de ancrypter" class="header__image">
-            <h1 class="header__title">ncripter</h1>
         </section>
     </header>
 
-    <main class="main">
-        <div class="container">
-            <form action="#" class="form">
-                <textarea name="" id="textToEncrypt" cols="30" rows="10" class="textToEncrypt"></textarea>
-                <div class="form__actions">
-                    <span class="form__warning">Solo letras minusculas y sin acentos</span>
-                    <button class="button button--primary">Encriptar</button>
-                    <button class="button button--secondary">Desencriptar</button>
-                </div>
-            </form>
-        </div>
+    <main class="main container">
+        <form action="#" class="form">
+            <textarea name="" id="textToEncrypt" class="form__textToEncrypt" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="form__actions">
+                <span class="form__warning">Solo letras minusculas y sin acentos</span>
+                <button class="button button--primary">Encriptar</button>
+                <button class="button button--secondary">Desencriptar</button>
+            </div>
+        </form>
     </main>
 
-    <aside class="aside">
-        <div class="container">
-            <section class="encryptetText"></section>
+    <aside class="aside container">
+        <div class="aside__encrypted">
+            <section class="encryptetText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus ex saepe. Ipsa unde animi vitae qui accusantium recusandae sapiente! Similique eligendi iusto, et sequi eius eveniet consequuntur reprehenderit adipisci.</section>
             <button class="button button--secondary">Copiar</button>
         </div>
     </aside>
 
     <footer class="footer">
         <section class="container">
-            <h2 class="footer__title">Desarrollado por <a href="#">Andres Jimenez</a></h2>
+            <h2 class="footer__title">Desarrollado por <a href="https://www.linkedin.com/in/amaujipe/" target="_blank">Andres Jimenez</a></h2>
             <p class="footer__paragraph">Oracle ONE - Allura Challenges</p>
         </section>
     </footer>

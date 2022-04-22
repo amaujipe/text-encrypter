@@ -20,7 +20,8 @@
 
 body {
     background-color: var(--background-color);
-    font-size: var(--main-font);
+    color:var(--text-color);
+    font-family: var(--main-font);
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -1,0 +1,53 @@
+.main {
+    /* background-color: pink; */
+    width: 60%;
+    position: absolute;
+    top: 4em;
+    left: 6em;
+}
+
+.form {
+    width: 100%;
+    height: calc(100vh - 8em);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form__textToEncrypt {
+    background-color: var(--background-color);
+    display: block;
+    max-width: 100%;
+    border: none;
+    resize: none;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.form__textToEncrypt:focus {
+    outline: none;
+}
+
+.form__textToEncrypt::placeholder {
+    color: var(--primary-color);
+    opacity: 1;
+    font-size: 2rem;
+}
+
+.form__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form__warning {
+    display: block;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.form__warning::before {
+    content: url(/assets/images/warning.svg);
+    margin-right: 0.25rem;
+    vertical-align: middle;
+}
