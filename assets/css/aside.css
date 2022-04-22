@@ -7,6 +7,8 @@
     top: 2rem;
     right: 2rem;
     bottom: 2rem;
+    display: flex;
+    align-items: center;
 }
 
 .aside.container {
@@ -26,4 +28,17 @@
 
 .aside__encrypted .button {
     width: 100%;
+}
+
+
+.aside__noMessage {
+    text-align: center;
+}
+
+.aside__image {
+    margin-bottom: 2rem;
+}
+
+.aside__title {
+    margin-bottom: 1rem;
 }
