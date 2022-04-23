@@ -68,3 +68,19 @@
     }
     
 }
+
+@media screen and (max-width: 767px) {
+
+    .form {
+        height: 55vh;
+    }
+
+    .form__actions .button {
+        width: 100%;
+    }
+
+    .form__actions .button:nth-child(2) {
+        margin-bottom: 1rem;
+    }
+
+}
