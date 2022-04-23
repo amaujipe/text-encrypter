@@ -17,13 +17,13 @@ textToEncrypt.addEventListener('keyup', function(event){
 // Encrypting text
 encryptButton.addEventListener('click', function(event){
     event.preventDefault();
-    transformText('encrypt');
+    encryptedText.textContent = transformText('encrypt');
 });
 
 // Decrypt text
 decryptButton.addEventListener('click', function(event){
     event.preventDefault();
-    transformText('decrypt');
+    encryptedText.textContent = transformText('decrypt');
 });
 
 // Copy text to clipboard from copyButton
