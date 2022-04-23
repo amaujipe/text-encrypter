@@ -1,27 +1,26 @@
 .main {
-    /* background-color: pink; */
-    width: 60%;
     position: absolute;
     top: 4em;
     left: 6em;
+    width: 60%;
 }
 
 .form {
-    width: 100%;
     height: calc(100vh - 8em);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
 }
 
 .form__textToEncrypt {
     background-color: var(--background-color);
-    display: block;
-    max-width: 100%;
     border: none;
-    resize: none;
-    font-size: 2rem;
     color: var(--primary-color);
+    display: block;
+    font-size: 2rem;
+    max-width: 100%;
+    resize: none;
 }
 
 .form__textToEncrypt:focus {
@@ -30,8 +29,8 @@
 
 .form__textToEncrypt::placeholder {
     color: var(--primary-color);
-    opacity: 1;
     font-size: 2rem;
+    opacity: 1;
 }
 
 .form__actions {
@@ -50,4 +49,22 @@
     content: url(/assets/images/warning.svg);
     margin-right: 0.25rem;
     vertical-align: middle;
+}
+
+
+@media screen and (max-width: 1023px) {
+    
+    .main {
+        position: static;
+        top: 0;
+        left: 0;
+        margin-right: 10rem;
+        max-width: calc(100vw - 2em);
+        width: 100%;
+    }
+    
+    .form {
+        height: 65vh;
+    }
+    
 }
