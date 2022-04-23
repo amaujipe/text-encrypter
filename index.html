@@ -25,22 +25,22 @@
     </header>
 
     <main class="main container">
-        <form action="#" class="form">
-            <textarea name="" id="textToEncrypt" class="form__textToEncrypt" placeholder="Ingrese el texto aqui"></textarea>
+        <form class="form">
+            <textarea id="textToEncrypt" class="form__textToEncrypt" placeholder="Ingrese el texto aqui"></textarea>
             <div class="form__actions">
                 <span class="form__warning">Solo letras minusculas y sin acentos</span>
-                <button class="button button--primary">Encriptar</button>
-                <button class="button button--secondary">Desencriptar</button>
+                <button id="encryptButton" class="button button--primary">Encriptar</button>
+                <button id="decryptButton" class="button button--secondary">Desencriptar</button>
             </div>
         </form>
     </main>
 
     <aside class="aside container">
-        <div class="aside__encrypted invisible">
-            <section class="encryptetText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus ex saepe. Ipsa unde animi vitae qui accusantium recusandae sapiente! Similique eligendi iusto, et sequi eius eveniet consequuntur reprehenderit adipisci.</section>
-            <button class="button button--secondary">Copiar</button>
+        <div id="asideMessage" class="aside__encrypted invisible">
+            <section id="encryptedText" class="encryptetText"></section>
+            <button id="copyButton" class="button button--secondary">Copiar</button>
         </div>
-        <div class="aside__noMessage">
+        <div id="asideNoMessage" class="aside__noMessage">
             <img src="/assets/images/guy-looking.png" alt="Sujeto buscando con una lupa" class="aside__image" />
             <h2 class="aside__title">Ningún mensaje fue encontrado</h2>
             <p class="aside__paragraph">Ingresa el texto que desees encriptar o desencriptar.</p>
@@ -53,6 +53,9 @@
             <p class="footer__paragraph">Oracle ONE - Allura Challenges</p>
         </section>
     </footer>
+
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/transformText.js"></script>
 
 </body>
 </html>
