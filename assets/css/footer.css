@@ -21,3 +21,11 @@
     color: var(--primary-color);
     text-decoration: none;
 }
+
+@media screen and (max-width: 767px) {
+
+    .footer {
+        position: static;
+    }
+    
+}

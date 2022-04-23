@@ -46,7 +46,7 @@
 }
 
 .form__warning::before {
-    content: url(/assets/images/warning.svg);
+    content: url(assets/images/warning.svg);
     margin-right: 0.25rem;
     vertical-align: middle;
 }
